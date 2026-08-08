@@ -111,25 +111,32 @@ Banks need to understand why customers leave and which customer segments are at 
 ```
 Bank_Customer_Churn_Analysis
 │
-├── Analysis
-│   ├── churn-analysis.ipynb
-│   └── sql-analysis.ipynb
-│
 ├── Dashboard
-│   └── Customer_Churn_Dashboard.twbx
-│
+│   └──  Customer_Churn_Dashboard.twbx
+|
 ├── Data
 │   ├── Churn_Modelling.csv
 │   └── Churn_Modelling_Cleaned.csv
-│
+|
 ├── Excel
 │   └── Customer_Churn_Excel_Dashboard.xlsx
-│
+|
 ├── Images
-│   ├── Customer_Churn_Excel_Dashboard (1).png
+│   ├── Customer_Churn_Analysis_using_python (1).png
+│   ├── Customer_Churn_Analysis_using_python (2).png
+│   ├── Customer_Churn_Analysis_using_python (3).png
+|   ├── Customer_Churn_Analysis_using_python (4).png
+│   ├── Customer_Churn_Analysis_using_python (5).png
+|   ├── Customer_Churn_Excel_Dashboard (1).png
 │   ├── Customer_Churn_Excel_Dashboard (2).png
-│   ├── Customer_Churn_Excel_Dashboard (3).png
+│   ├── Customer_Churn_Excel_Dashboard (3).png 
 │   └── Customer_Churn_Tableau_Dashboard.png
+|
+├── Python
+│   └── churn-analysis.ipynb
+
+├── SQL
+│   └── sql-analysis.ipynb
 │
 ├── LICENSE
 ├── README.md
@@ -143,10 +150,10 @@ Bank_Customer_Churn_Analysis
 ## 📊 Analysis
 
 - **Python EDA Notebook**  
-  https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Analysis/churn-analysis.ipynb
+  https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Python/churn-analysis.ipynb
 
 - **SQL Analysis Notebook**  
-  https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Analysis/sql-analysis.ipynb
+  https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/SQL/sql-analysis.ipynb
 
 ---
 
@@ -226,6 +233,36 @@ The project includes analysis of:
 ## 📈 Tableau Dashboard
 
 ![Tableau Dashboard](https://raw.githubusercontent.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/main/Images/Customer_Churn_Tableau_Dashboard.png)
+
+---
+
+## 📈 Python Analysis - Distribution of Categorical Variables
+
+![Python Analysis 1](https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Images/Customer_Churn_Analysis_using_python%20(1).png)
+
+---
+
+## 📈 Python Analysis - Boxplots of Numerical Variables
+
+![Python Analysis 2](https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Images/Customer_Churn_Analysis_using_python%20(2).png)
+
+---
+
+## 📈 Python Analysis - Bivariate Analysis - Churn Rate by Categorical Variables
+
+![Python Analysis 3](https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Images/Customer_Churn_Analysis_using_python%20(3).png)
+
+---
+
+## 📈 Python Analysis - Relationship Between Numerical Variables
+
+![Python Analysis 4](https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Images/Customer_Churn_Analysis_using_python%20(4).png)
+
+---
+
+## 📈 Python Analysis - Correlation Matrix of Numerical Variables
+
+![Python Analysis 5](https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Images/Customer_Churn_Analysis_using_python%20(5).png)
 
 ---
 
