@@ -2,12 +2,12 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![SQL](https://img.shields.io/badge/SQL-Analysis-orange?logo=mysql)
 ![Excel](https://img.shields.io/badge/Excel-Dashboard-green?logo=microsoftexcel)
-![Tableau](https://img.shields.io/badge/Tableau-Visualization-E97627?logo=tableau)
+![Power BI](https://img.shields.io/badge/Power_BI-Visualization-F2C811?logo=powerbi&logoColor=black)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
 ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A complete **Data Analytics** project that analyzes customer churn in a banking institution using **SQL, Python, Excel, and Tableau**.
+A complete **Data Analytics** project that analyzes customer churn in a banking institution using **SQL, Python, Excel, and PowrBI**.
 The project explores customer demographics, financial characteristics, account activity, and behavioral patterns to identify factors associated with customer churn and generate actionable business insights.
 
 ---
@@ -47,7 +47,7 @@ The project demonstrates an end-to-end **Data Analytics workflow**, including:
 - Exploratory Data Analysis (EDA)
 - Statistical Analysis
 - Excel Dashboard
-- Tableau Dashboard
+- PowerBI Dashboard
 - Business Insights
 - Machine Learning Preparation
 
@@ -83,7 +83,7 @@ The main objectives of this project are to:
 - Analyze the relationship between customer attributes and churn.
 - Perform exploratory data analysis using Python.
 - Perform business-focused analysis using SQL.
-- Build interactive dashboards using Excel and Tableau.
+- Build interactive dashboards using Excel and PowerBI.
 - Generate actionable business insights.
 - Prepare the dataset for future machine learning implementation.
 
@@ -133,9 +133,6 @@ The main objectives of this project are to:
 ```text
 Bank_Customer_Churn_Analysis
 │
-├── Dashboard
-│   └── Customer_Churn_Dashboard.twbx
-│
 ├── Data
 │   ├── Churn_Modelling.csv
 │   └── Churn_Modelling_Cleaned.csv
@@ -154,6 +151,9 @@ Bank_Customer_Churn_Analysis
 │   ├── Customer_Churn_Excel_Dashboard (3).png
 │   └── Customer_Churn_Tableau_Dashboard.png
 │
+├── PowerBI
+│   └── Customer_Churn_Dashboard.pbix
+|
 ├── Python
 │   └── churn-analysis.ipynb
 │
@@ -191,8 +191,9 @@ Bank_Customer_Churn_Analysis
 
 ## 📈 Dashboards
 
-- **Tableau Dashboard (.twbx)**  
-  https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Dashboard/Customer_Churn_Dashboard.twbx
+- **PowerBI Dashboard (.pbix)**  
+  https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/PowerBI/Customer_Churn_Dashboard.pbix
+  
 
 - **Excel Dashboard (.xlsx)**  
   https://github.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/blob/main/Excel/Customer_Churn_Excel_Dashboard.xlsx
@@ -210,7 +211,7 @@ Bank_Customer_Churn_Analysis
 | Matplotlib | Data Visualization |
 | Seaborn | Statistical Visualization |
 | Excel | Dashboard Development |
-| Tableau | Interactive Dashboard |
+| PowerBI | Interactive Dashboard |
 | Git & GitHub | Version Control |
 
 ---
@@ -250,7 +251,7 @@ The project follows a structured data analytics workflow:
 5. **Dashboard Development**
 
    - Built an interactive Excel dashboard using Pivot Tables, Charts, and Slicers.
-   - Developed a Tableau dashboard for dynamic business visualization.
+   - Developed a PowerBI dashboard for dynamic business visualization.
 
 6. **Business Insights**
 
@@ -364,9 +365,9 @@ A correlation heatmap was created to analyze relationships among numerical varia
 
 ---
 
-## 📈 Tableau Dashboard
+## 📈 PowerBI Dashboard
 
-![Tableau Dashboard](https://raw.githubusercontent.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/main/Images/Customer_Churn_Tableau_Dashboard.png)
+![PowerBI Dashboard](https://raw.githubusercontent.com/JEISAMATHEW/Bank_Customer_Churn_Analysis/main/Images/Customer_Churn_PowerBI_Dashboard.png)
 
 ---
 
@@ -506,7 +507,6 @@ Open:
 - Implement feature importance analysis.
 - Add model explainability using SHAP.
 - Deploy the churn prediction model using Streamlit.
-- Add Power BI dashboards.
 - Develop a real-time customer churn monitoring system.
 
 ---
@@ -521,7 +521,7 @@ This project is licensed under the **MIT License**.
 
 **Jeisa Mathew**
 
-**Data Analytics | SQL | Python | Excel | Tableau | Machine Learning**
+**Data Analytics | SQL | Python | Excel | PowerBI | Machine Learning**
 
 - GitHub: https://github.com/JEISAMATHEW
 - LinkedIn: https://www.linkedin.com/in/jeisamathew
@@ -538,7 +538,7 @@ This project was developed as part of my **Data Analytics and Machine Learning l
 - NumPy
 - Data Visualization
 - Excel
-- Tableau
+- PowerBI
 - Exploratory Data Analysis
 - Business Intelligence
 - Machine Learning
