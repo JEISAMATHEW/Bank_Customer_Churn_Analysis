@@ -7,7 +7,7 @@
 ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A complete **Data Analytics** project that analyzes customer churn in a banking institution using **SQL, Python, Excel, and PowrBI**.
+A complete **Data Analytics** project that analyzes customer churn in a banking institution using **SQL, Python, Excel, and PowerBI**.
 The project explores customer demographics, financial characteristics, account activity, and behavioral patterns to identify factors associated with customer churn and generate actionable business insights.
 
 ---
