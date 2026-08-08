@@ -1,5 +1,4 @@
 # 🏦 Bank Customer Churn Analysis
-
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![SQL](https://img.shields.io/badge/SQL-Analysis-orange?logo=mysql)
 ![Excel](https://img.shields.io/badge/Excel-Dashboard-green?logo=microsoftexcel)
@@ -8,7 +7,8 @@
 ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-A complete **Data Analytics** project that explores customer churn in a banking institution using **SQL, Python, Excel, and Tableau**. The project analyzes customer behavior, identifies churn patterns, and provides business insights through interactive dashboards and visualizations.
+A complete **Data Analytics** project that analyzes customer churn in a banking institution using **SQL, Python, Excel, and Tableau**.
+The project explores customer demographics, financial characteristics, account activity, and behavioral patterns to identify factors associated with customer churn and generate actionable business insights.
 
 ---
 
@@ -21,26 +21,31 @@ A complete **Data Analytics** project that explores customer churn in a banking 
 - [Repository Structure](#-repository-structure)
 - [Project Files](#-project-files)
 - [Tools & Technologies](#-tools--technologies)
-- [Exploratory Data Analysis (EDA)](#-exploratory-data-analysis-eda)
+- [Data Analysis Workflow](#-data-analysis-workflow)
+- [Exploratory Data Analysis](#-exploratory-data-analysis-eda)
 - [Dashboard Preview](#-dashboard-preview)
 - [Key Business Insights](#-key-business-insights)
-- [Machine Learning](#-machine-learning)
+- [Future Machine Learning Enhancements](#-future-machine-learning-enhancements)
 - [How to Run the Project](#-how-to-run-the-project)
 - [Future Improvements](#-future-improvements)
 - [License](#-license)
 - [Author](#-author)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
 # 📌 Project Overview
 
-Customer churn is a significant challenge for banks, as retaining existing customers is more cost-effective than acquiring new ones. This project analyzes customer demographics, financial information, and account activity to identify factors associated with customer churn.
+Customer churn is a significant challenge for banking institutions because losing existing customers can negatively impact revenue, customer lifetime value, and long-term growth.
 
-The project demonstrates an end-to-end analytics workflow, including:
+This project analyzes customer demographics, financial information, product usage, and account activity to identify patterns associated with customer churn.
+
+The project demonstrates an end-to-end **Data Analytics workflow**, including:
 
 - Data Cleaning
 - SQL Analysis
 - Exploratory Data Analysis (EDA)
+- Statistical Analysis
 - Excel Dashboard
 - Tableau Dashboard
 - Business Insights
@@ -50,91 +55,108 @@ The project demonstrates an end-to-end analytics workflow, including:
 
 # 💼 Business Problem
 
-Banks need to understand why customers leave and which customer segments are at higher risk of churn. By identifying these patterns, banks can:
+Banks need to understand:
+
+- Why customers leave the bank
+- Which customer segments have higher churn
+- Whether demographic characteristics influence churn
+- Whether customer activity and product usage affect churn
+- Which customer groups should be targeted for retention campaigns
+
+Understanding these patterns can help banks:
 
 - Improve customer retention
 - Increase customer lifetime value
-- Reduce acquisition costs
-- Design targeted retention campaigns
-- Support data-driven business decisions
+- Reduce customer acquisition costs
+- Develop targeted retention strategies
+- Support data-driven decision-making
 
 ---
 
 # 🎯 Project Objectives
 
-- Analyze customer demographics and financial behavior.
-- Identify factors contributing to customer churn.
-- Perform exploratory data analysis.
-- Create interactive dashboards in Excel and Tableau.
+The main objectives of this project are to:
+
+- Analyze customer demographics and financial characteristics.
+- Understand customer churn patterns.
+- Identify customer segments with higher churn rates.
+- Analyze the relationship between customer attributes and churn.
+- Perform exploratory data analysis using Python.
+- Perform business-focused analysis using SQL.
+- Build interactive dashboards using Excel and Tableau.
 - Generate actionable business insights.
-- Prepare the dataset for machine learning classification models.
+- Prepare the dataset for future machine learning implementation.
 
 ---
 
 # 📊 Dataset Information
 
 | Attribute | Description |
-|------------|-------------|
+|---|---|
 | Domain | Banking |
 | Task | Customer Churn Analysis |
 | Problem Type | Binary Classification |
 | Dataset Size | 10,000 Customers |
 | Missing Values | None |
-| Target Variable | Exited |
+| Target Variable | `Exited` |
 
-### Target Variable
+## Target Variable
 
 | Value | Description |
-|-------|-------------|
+|---:|---|
 | 0 | Customer Retained |
 | 1 | Customer Churned |
 
-### Dataset Features
+## Dataset Features
 
-- Customer ID
-- Credit Score
-- Geography
-- Gender
-- Age
-- Tenure
-- Balance
-- Number of Products
-- Credit Card Status
-- Active Member
-- Estimated Salary
-- Exited (Target)
+| Feature | Description |
+|---|---|
+| `RowNumber` | Dataset row identifier |
+| `CustomerId` | Unique customer identifier |
+| `Surname` | Customer surname |
+| `CreditScore` | Customer credit score |
+| `Geography` | Customer country |
+| `Gender` | Customer gender |
+| `Age` | Customer age |
+| `Tenure` | Number of years with the bank |
+| `Balance` | Customer account balance |
+| `NumOfProducts` | Number of bank products used |
+| `HasCrCard` | Credit card ownership status |
+| `IsActiveMember` | Customer activity status |
+| `EstimatedSalary` | Estimated customer salary |
+| `Exited` | Churn indicator |
 
 ---
 
 # 📂 Repository Structure
 
-```
+```text
 Bank_Customer_Churn_Analysis
 │
 ├── Dashboard
-│   └──  Customer_Churn_Dashboard.twbx
-|
+│   └── Customer_Churn_Dashboard.twbx
+│
 ├── Data
 │   ├── Churn_Modelling.csv
 │   └── Churn_Modelling_Cleaned.csv
-|
+│
 ├── Excel
 │   └── Customer_Churn_Excel_Dashboard.xlsx
-|
+│
 ├── Images
 │   ├── Customer_Churn_Analysis_using_python (1).png
 │   ├── Customer_Churn_Analysis_using_python (2).png
 │   ├── Customer_Churn_Analysis_using_python (3).png
-|   ├── Customer_Churn_Analysis_using_python (4).png
+│   ├── Customer_Churn_Analysis_using_python (4).png
 │   ├── Customer_Churn_Analysis_using_python (5).png
-|   ├── Customer_Churn_Excel_Dashboard (1).png
+│   ├── Customer_Churn_Excel_Dashboard (1).png
 │   ├── Customer_Churn_Excel_Dashboard (2).png
-│   ├── Customer_Churn_Excel_Dashboard (3).png 
+│   ├── Customer_Churn_Excel_Dashboard (3).png
 │   └── Customer_Churn_Tableau_Dashboard.png
-|
+│
 ├── Python
 │   └── churn-analysis.ipynb
-
+│
 ├── SQL
 │   └── sql-analysis.ipynb
 │
@@ -193,20 +215,132 @@ Bank_Customer_Churn_Analysis
 
 ---
 
+# 📊 Data Analysis Workflow
+
+The project follows a structured data analytics workflow:
+
+1. **Data Collection**
+
+   - Imported the Bank Customer Churn dataset.
+
+2. **Data Cleaning**
+
+   - Removed unnecessary columns.
+   - Checked for missing values.
+   - Checked for duplicate records.
+   - Prepared a cleaned dataset for analysis.
+
+3. **SQL Analysis**
+
+   - Analyzed customer demographics.
+   - Calculated churn rates across different customer segments.
+   - Analyzed customer activity and product usage.
+   - Generated business-focused insights using SQL queries.
+
+4. **Exploratory Data Analysis (EDA)**
+
+   - Examined categorical variable distributions.
+   - Examined numerical variable distributions.
+   - Performed univariate analysis.
+   - Performed bivariate analysis.
+   - Analyzed churn across customer segments.
+   - Identified relationships between numerical variables.
+   - Performed correlation analysis.
+
+5. **Dashboard Development**
+
+   - Built an interactive Excel dashboard using Pivot Tables, Charts, and Slicers.
+   - Developed a Tableau dashboard for dynamic business visualization.
+
+6. **Business Insights**
+
+   - Identified key patterns associated with customer churn.
+   - Identified higher-risk customer segments.
+   - Presented actionable recommendations to improve customer retention.
+
+---
+
 # 📈 Exploratory Data Analysis (EDA)
 
-The project includes analysis of:
+The project includes comprehensive **Univariate and Bivariate Analysis**.
 
-- Customer Distribution by Country
-- Customer Distribution by Gender
-- Churn by Country
-- Churn by Gender
-- Churn by Active Member
-- Churn by Credit Card
-- Churn by Age Group
-- Average Balance by Country
-- Average Salary by Gender
-- Correlation Analysis
+## 🔹 Univariate Analysis
+
+### Vertical Bar Charts
+
+The following categorical variables were analyzed using vertical bar charts:
+
+- `Exited`
+- `Geography`
+- `Gender`
+- `Tenure`
+- `NumOfProducts`
+- `HasCrCard`
+- `IsActiveMember`
+
+### Horizontal Bar Charts
+
+Categorical distributions were also analyzed using horizontal bar charts to provide an alternative comparison of category frequencies.
+
+### Histograms
+
+Numerical variables were analyzed using histograms to understand their distributions:
+
+- `CreditScore`
+- `Age`
+- `Tenure`
+- `Balance`
+- `NumOfProducts`
+- `EstimatedSalary`
+
+### Boxplots
+
+Boxplots were used to examine the distribution, median, spread, and potential outliers of numerical variables.
+
+---
+
+## 🔹 Bivariate Analysis
+
+Bivariate analysis was performed to identify relationships between customer attributes and churn.
+
+### Vertical Column Bar Charts
+
+Churn rates were analyzed across:
+
+- Geography
+- Gender
+- Tenure
+- Number of Products
+- Credit Card Status
+- Active Member Status
+
+### Horizontal Bar Charts
+
+Churn rates across categorical variables were also visualized using horizontal bar charts.
+
+### Boxplots
+
+The distribution of numerical variables was compared across churn status:
+
+- Age vs Exited
+- Balance vs Exited
+- Credit Score vs Exited
+- Estimated Salary vs Exited
+- Tenure vs Exited
+
+### Scatter Plots
+
+Relationships between numerical variables were analyzed using scatter plots.
+
+Examples include:
+
+- Age vs Balance
+- Credit Score vs Balance
+- Age vs Estimated Salary
+
+### Correlation Matrix
+
+A correlation heatmap was created to analyze relationships among numerical variables and identify variables associated with customer churn.
 
 ---
 
@@ -268,6 +402,8 @@ The project includes analysis of:
 
 # 🔍 Key Business Insights
 
+Based on the analysis:
+
 - France has the highest number of customers.
 - Germany has the highest customer churn among the three countries.
 - Female customers show a relatively higher churn rate.
@@ -276,44 +412,17 @@ The project includes analysis of:
 - Germany has the highest average account balance.
 - Average salaries are nearly identical across genders.
 - Customers with fewer banking products tend to have higher churn.
+- Customer activity, age, geography, and product usage provide useful signals for customer retention analysis.
 
----
+These findings can help banking institutions develop more targeted customer-retention strategies and improve customer engagement.
 
----
-# 📊 Data Analysis Workflow
-
-The project follows a structured data analytics workflow:
-
-1. **Data Collection**
-   - Imported the Bank Customer Churn dataset.
-
-2. **Data Cleaning**
-   - Removed unnecessary columns.
-   - Checked for missing values and duplicates.
-   - Prepared a cleaned dataset for analysis.
-
-3. **SQL Analysis**
-   - Analyzed customer demographics.
-   - Calculated churn rates across different customer segments.
-   - Generated business-focused insights using SQL queries.
-
-4. **Exploratory Data Analysis (EDA)**
-   - Examined customer distributions.
-   - Analyzed churn by geography, gender, age group, and activity status.
-   - Identified relationships between customer attributes.
-
-5. **Dashboard Development**
-   - Built an interactive Excel dashboard using Pivot Tables, Charts, and Slicers.
-   - Developed a Tableau dashboard for dynamic business visualization.
-
-6. **Business Insights**
-   - Identified key drivers of customer churn.
-   - Presented actionable recommendations to improve customer retention.
 ---
 
 # 🤖 Future Machine Learning Enhancements
 
-The cleaned dataset has been prepared for developing customer churn prediction models in future versions of this project. While the current project focuses on data cleaning, exploratory data analysis (EDA), SQL analysis, and dashboard development, the dataset is suitable for implementing machine learning models to predict customer churn.
+The cleaned dataset has been prepared for developing customer churn prediction models in future versions of this project.
+
+While the current project focuses on **Data Analytics, SQL, Python EDA, Excel, and Tableau**, the dataset provides a strong foundation for implementing machine learning classification models.
 
 ## Potential Machine Learning Models
 
@@ -329,7 +438,7 @@ The following classification algorithms can be explored:
 
 ## Model Evaluation Metrics
 
-The performance of the models can be evaluated using:
+The performance of future models can be evaluated using:
 
 - Accuracy
 - Precision
@@ -340,15 +449,18 @@ The performance of the models can be evaluated using:
 
 ## Future Scope
 
-Future enhancements of this project may include:
+Future machine learning enhancements may include:
 
 - Feature Engineering
 - Feature Selection
-- Hyperparameter Tuning
+- Train-Test Split
 - Cross-Validation
+- Hyperparameter Tuning
 - Model Comparison
 - Feature Importance Analysis
+- Model Explainability
 - Model Deployment using Streamlit or Flask
+
 ---
 
 # 🚀 How to Run the Project
@@ -379,18 +491,23 @@ jupyter notebook
 
 Open:
 
-- `Analysis/churn-analysis.ipynb`
-- `Analysis/sql-analysis.ipynb`
+- `Python/churn-analysis.ipynb`
+- `SQL/sql-analysis.ipynb`
 
 ---
 
 # 📌 Future Improvements
 
 - Develop predictive machine learning models.
+- Perform feature engineering and feature selection.
 - Perform hyperparameter tuning.
-- Deploy the model using Streamlit or Flask.
+- Implement cross-validation.
+- Compare multiple machine learning models.
+- Implement feature importance analysis.
+- Add model explainability using SHAP.
+- Deploy the churn prediction model using Streamlit.
 - Add Power BI dashboards.
-- Implement feature importance and model explainability.
+- Develop a real-time customer churn monitoring system.
 
 ---
 
@@ -404,6 +521,8 @@ This project is licensed under the **MIT License**.
 
 **Jeisa Mathew**
 
+**Data Analytics | SQL | Python | Excel | Tableau | Machine Learning**
+
 - GitHub: https://github.com/JEISAMATHEW
 - LinkedIn: https://www.linkedin.com/in/jeisamathew
 
@@ -411,6 +530,19 @@ This project is licensed under the **MIT License**.
 
 # 🙌 Acknowledgements
 
-This project was developed as part of my Data Analytics and Machine Learning learning journey to strengthen practical skills in SQL, Python, Excel, Tableau, data visualization, and business analytics.
+This project was developed as part of my **Data Analytics and Machine Learning learning journey** to strengthen practical skills in:
+
+- SQL
+- Python
+- Pandas
+- NumPy
+- Data Visualization
+- Excel
+- Tableau
+- Exploratory Data Analysis
+- Business Intelligence
+- Machine Learning
+
+The project demonstrates an end-to-end approach to analyzing a real-world business problem using data.
 
 If you found this project useful or interesting, please consider giving it a ⭐ on GitHub!
