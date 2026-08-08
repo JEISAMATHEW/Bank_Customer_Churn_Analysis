@@ -149,7 +149,7 @@ Bank_Customer_Churn_Analysis
 │   ├── Customer_Churn_Excel_Dashboard (1).png
 │   ├── Customer_Churn_Excel_Dashboard (2).png
 │   ├── Customer_Churn_Excel_Dashboard (3).png
-│   └── Customer_Churn_Tableau_Dashboard.png
+│   └── Customer_Churn_PowerBI_Dashboard.png
 │
 ├── PowerBI
 │   └── Customer_Churn_Dashboard.pbix
